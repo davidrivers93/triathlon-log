@@ -19,19 +19,21 @@ const CompetitionCard = ({ competition }: { competition: Competition }) => {
           </div>
         </div>
         <div className="mt-2 sm:mt-0">
-          <button className="flex items-center text-white bg-blue-600 rounded px-2 py-1 hover:bg-blue-500 focus:outline-none focus:shadow-outline">
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span className="ml-1 text-sm text-white">See detail</span>
+          <button class="flex items-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <span className="mr-1">
+              <svg
+                className="h-5 w-5"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </span>
+            <span>Detail</span>
           </button>
         </div>
       </div>
@@ -53,40 +55,6 @@ const CompetitionCard = ({ competition }: { competition: Competition }) => {
           <span className="mt-2 text-xl font-medium text-gray-800">35</span>
         </div>
       </div>
-      {/*       <div className="mt-3">
-        <h4 className="text-gray-600 text-sm">User Score</h4>
-        <span className="mt-2 text-xl font-medium text-gray-800">21%</span>
-      </div> */}
-      {/* <div className="mt-4">
-        <h4 className="text-sm text-gray-600">45 Followers</h4>
-        <div className="flex items-center overflow-hidden mt-2">
-          <img
-            className="inline-block h-6 w-6 rounded-full text-white border-2 border-white object-cover object-center"
-            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-            alt=""
-          ></img>
-          <img
-            className="-ml-2 inline-block h-6 w-6 rounded-full text-white border-2 border-white object-cover object-center"
-            src="https://images.unsplash.com/photo-1510520434124-5bc7e642b61d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          ></img>
-        </div>
-      </div>
-      <div className="mt-4">
-        <h4 className="text-sm text-gray-600">250 Following</h4>
-        <div className="flex items-center overflow-hidden mt-2">
-          <img
-            className="inline-block h-6 w-6 rounded-full text-white border-2 border-white object-cover object-center"
-            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-            alt=""
-          ></img>
-          <img
-            className="-ml-2 inline-block h-6 w-6 rounded-full text-white border-2 border-white object-cover object-center"
-            src="https://images.unsplash.com/photo-1510520434124-5bc7e642b61d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          ></img>
-        </div>
-      </div> */}
     </div>
   );
 };
