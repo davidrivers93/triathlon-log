@@ -2,13 +2,12 @@ import React from "react";
 import CompetitionCard from "../../components/competition-card";
 import { Competition } from "../../models/competition";
 import { CompetitionsRepository } from "../../repositories/competitions";
-import { convertFirebaseDate } from "../../utils/date";
 
 const Competitions = (props: { competitions: Competition[] }) => {
   const { competitions } = props;
 
   return (
-    <div>
+    <div className="container">
       <div className="flex justify-end">
         <button className="float-right flex items-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
           <span className="mr-1">
@@ -29,7 +28,7 @@ const Competitions = (props: { competitions: Competition[] }) => {
       </div>
       <div>
         {competitions.map((entry: Competition) => (
-          <div key={entry.id}>
+          <div key={entry.id} className="py-2">
             <CompetitionCard competition={entry}></CompetitionCard>
           </div>
         ))}
@@ -41,7 +40,6 @@ const Competitions = (props: { competitions: Competition[] }) => {
 export const getStaticProps = async () => {
   const competitionRepository = new CompetitionsRepository();
   const competitions = await competitionRepository.getAll();
-
   return {
     props: {
       competitions,
